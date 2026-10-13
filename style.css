@@ -324,3 +324,16 @@ footer p { margin: 4px 0; }
   .cal-grid { gap: 4px; }
   .contact .info dd { margin-bottom: 10px; }
 }
+
+/* profile photo (temporary image) */
+.profile .photo.has-img {
+  position: relative;
+  background: url("profile.webp") no-repeat;
+  background-size: 210%;
+  background-position: 48% 12%;
+}
+.temp-badge {
+  position: absolute; bottom: 6%; left: 50%; transform: translateX(-50%);
+  background: rgba(255, 246, 214, .95); border: 1px dashed #d8b64a; color: var(--ink);
+  font-size: 12px; padding: 2px 12px; border-radius: 999px; white-space: nowrap;
+}
