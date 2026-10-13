@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>お問い合わせ・ご予約｜陽だまり 和ごころ®式セラピー</title>
+<meta name="description" content="陽だまりのご予約・お問い合わせ。予約カレンダーから空き状況をご確認いただけます。栃木県・完全予約制。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a href="index.html" class="logo"><span class="leaf">☀</span>陽だまり <small>HIDAMARI</small></a>
+    <a href="#calendar" class="btn small">ご予約</a>
+  </div>
+  <nav class="tabs" aria-label="ページ">
+    <ul>
+      <li><a href="index.html">トップ</a></li>
+      <li><a href="price.html">料金</a></li>
+      <li><a href="access.html">アクセス</a></li>
+      <li><a href="contact.html" aria-current="page">お問い合わせ</a></li>
+      <li><a href="faq.html">よくある質問</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="page-title">
+    <div class="en">CONTACT</div>
+    <h1 class="mincho">お問い合わせ・ご予約</h1>
+    <p>あなたが本来のあなたらしく、心地よく過ごせる毎日を応援します。</p>
+  </div>
+
+  <!-- FLOW -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="en">FLOW</div>
+        <h2 class="mincho">ご予約から施術までの流れ</h2>
+      </div>
+      <div class="flow">
+        <div class="step"><h3>ご予約</h3><p>予約カレンダーで空いている日時を選び、InstagramのDMでお知らせください。</p></div>
+        <div class="step"><h3>カウンセリング</h3><p>今の状態や気になることを、ゆっくりお伺いします。</p></div>
+        <div class="step"><h3>施術</h3><p>服を着たまま、やさしく触れていきます。眠ってしまっても大丈夫です。</p></div>
+        <div class="step"><h3>アフターケア</h3><p>施術後の過ごし方や、ご自宅でできることをお伝えします。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALENDAR -->
+  <section id="calendar" class="alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="en">CALENDAR</div>
+        <h2 class="mincho">予約カレンダー</h2>
+      </div>
+      <div class="booking">
+        <div class="cal">
+          <div class="cal-head">
+            <button type="button" id="prevMonth" aria-label="前の月">‹</button>
+            <strong id="monthLabel"></strong>
+            <button type="button" id="nextMonth" aria-label="次の月">›</button>
+          </div>
+          <div class="cal-grid" id="calGrid"></div>
+          <div class="legend"><span>◎ 空きあり</span><span>△ 残りわずか</span><span>× 満席</span><span>－ お休み</span></div>
+        </div>
+        <div class="slots">
+          <h3 id="slotTitle">日付を選んでください</h3>
+          <p class="hint">カレンダーから、ご希望の日を選んでください。</p>
+          <div class="slot-list" id="slotList"></div>
+          <select id="menuSelect" aria-label="メニュー">
+            <option value="">メニューを選んでください</option>
+            <option>ベビー（5,000円）</option>
+            <option>キッズ（6,000円）</option>
+            <option>大人（8,000円）</option>
+          </select>
+          <div class="summary" id="summary">日時とメニューを選ぶと、ここに予約内容が出ます。</div>
+          <a href="https://www.instagram.com/hrk4.16/" target="_blank" rel="noopener" class="btn" id="bookBtn" aria-disabled="true">内容をコピーしてDMで予約する</a>
+          <p class="copied" id="copied"></p>
+        </div>
+      </div>
+      <p class="note">※ 予約内容がコピーされるので、InstagramのDMに貼り付けて送ってください。予約は、返信をもって確定となります。</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="en">CONTACT</div>
+        <h2 class="mincho">ご質問・ご相談</h2>
+      </div>
+      <p>「受けられるか分からない」「まずは話を聞いてみたい」という方も、お気軽にどうぞ。</p>
+      <div class="btns">
+        <a href="https://www.instagram.com/hrk4.16/" class="btn" target="_blank" rel="noopener">Instagram DMで相談する</a>
+        <a href="#" class="btn ghost"><span class="placeholder">LINEで相談する</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>陽だまり｜和ごころ®式セラピー（クラニオセイクラルセラピー）</p>
+  <p>こころとからだにやさしい時間を ｜ 栃木県・完全予約制</p>
+  <p style="margin-top:12px;opacity:.7">&copy; 2026 陽だまり HIDAMARI</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
