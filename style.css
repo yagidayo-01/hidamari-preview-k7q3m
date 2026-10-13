@@ -337,3 +337,14 @@ footer p { margin: 4px 0; }
   background: rgba(255, 246, 214, .95); border: 1px dashed #d8b64a; color: var(--ink);
   font-size: 12px; padding: 2px 12px; border-radius: 999px; white-space: nowrap;
 }
+
+/* hero photo */
+.hero-visual.has-img {
+  background: url("treatment.webp") no-repeat;
+  background-size: cover;
+  background-position: 92% 30%;
+}
+.img-note { text-align: center; font-size: 11px; color: var(--ink-soft); margin: 10px 0 0; }
+@media (max-width: 860px) {
+  .hero-photo-wrap { order: -1; }
+}
