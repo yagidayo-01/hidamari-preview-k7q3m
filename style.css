@@ -340,9 +340,9 @@ footer p { margin: 4px 0; }
 
 /* hero photo */
 .hero-visual.has-img {
-  background: url("treatment.webp") no-repeat;
+  background: url("treatment.png") no-repeat;
   background-size: cover;
-  background-position: 92% 30%;
+  background-position: 68% 50%;
 }
 .img-note { text-align: center; font-size: 11px; color: var(--ink-soft); margin: 10px 0 0; }
 @media (max-width: 860px) {
