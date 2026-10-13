@@ -359,3 +359,97 @@ footer p { margin: 4px 0; }
   .hero-banner { height: 62vw; background-position: 45% 8%; }
   .hero.hero-under { padding: 20px 0 60px; }
 }
+
+/* ===== スマホ向けの見やすさ調整（幅600px以下） ===== */
+@media (max-width: 600px) {
+  body { font-size: 15px; line-height: 1.85; letter-spacing: .02em; }
+
+  /* ヘッダー：下に固定の予約ボタンがあるページでは右上のボタンを隠す */
+  body:has(.float-cta) header.site .btn.small { display: none; }
+  header.site .wrap { height: 50px; }
+  .logo { font-size: 16px; }
+
+  /* タブ：5つを1行に収める（横スクロールなし） */
+  nav.tabs ul { display: grid; grid-template-columns: repeat(5, auto); justify-content: space-between; overflow: visible; padding: 0 8px; }
+  nav.tabs a { padding: 10px 3px; font-size: 12px; }
+
+  /* 余白と見出し */
+  section { padding: 48px 0; }
+  .sec-head { margin-bottom: 26px; }
+  .sec-head h2 { font-size: 21px; }
+  .sec-head h2::after { margin-top: 12px; width: 36px; }
+  .page-title { padding: 28px 16px 24px; }
+  .page-title h1 { font-size: 24px; }
+
+  /* 長い文章は左揃えで読みやすく */
+  .about-text, .hero.hero-under p.lead, .profile p { text-align: left; }
+  .about-text { margin-bottom: 26px; }
+  .hero.hero-under { padding: 16px 0 44px; }
+  .hero.hero-under .tags { margin-bottom: 22px; }
+  .hero .tags span { font-size: 12px; padding: 3px 12px; }
+
+  /* 3つの特長：アイコン左・文字右の横並びでコンパクトに */
+  .features { gap: 12px; }
+  .feature { display: grid; grid-template-columns: 60px 1fr; gap: 2px 14px; align-items: center; text-align: left; padding: 16px; }
+  .feature .icon { width: 60px; height: 60px; margin: 0; grid-row: span 2; }
+  .feature .icon svg { width: 36px; height: 36px; }
+  .feature h3 { font-size: 15px; margin: 0; }
+  .feature h3 br { display: none; }
+  .feature p { font-size: 13px; }
+
+  /* おすすめ：1枚のカードにリストでまとめる */
+  .recommend { grid-template-columns: 1fr; gap: 0; background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 4px 16px; }
+  .recommend li { background: none; border: 0; border-bottom: 1px dashed var(--line); border-radius: 0; padding: 11px 0 11px 34px; }
+  .recommend li:last-child { border-bottom: 0; }
+  .recommend li::before { left: 0; width: 22px; height: 22px; font-size: 12px; }
+
+  /* 赤ちゃんの頭の形 */
+  .box { padding: 20px 18px; }
+  .head-intro { gap: 14px; margin-bottom: 14px; }
+  .stat .num { font-size: 36px; }
+  .causes { grid-template-columns: 1fr; gap: 8px; }
+  .causes div { padding: 10px 14px; text-align: left; font-size: 14px; }
+  .choice { padding: 18px 14px; margin: 16px 0; font-size: 15px; }
+
+  /* プロフィール */
+  .profile { gap: 18px; }
+  .profile .photo { max-width: 200px; }
+  .profile .name { font-size: 24px; }
+  .profile blockquote { padding: 14px 16px; font-size: 14px; }
+
+  /* お約束・ご案内 */
+  .promise { padding: 20px 16px; }
+  .promise .ribbon { font-size: 13px; padding: 8px 12px; }
+  .promise li { font-size: 14px; }
+  .guide { gap: 10px; }
+  .guide a { padding: 16px 8px; }
+  .guide strong { font-size: 15px; }
+  .guide span.desc { font-size: 12px; }
+
+  /* 料金 */
+  .menu { gap: 22px; }
+  .menu-card { padding: 26px 18px 20px; }
+  .menu-card .price { font-size: 32px; margin: 0 0 6px; }
+
+  /* 流れ：番号の横に文字 */
+  .flow { gap: 10px; }
+  .flow .step { text-align: left; padding: 16px 18px; }
+  .flow .step::before { margin-bottom: 2px; }
+  .flow .step h3 { margin-bottom: 4px; }
+
+  /* よくある質問 */
+  .faq summary { padding: 15px 40px 15px 42px; font-size: 15px; }
+  .faq summary::before { left: 16px; top: 12px; }
+  .faq summary::after { right: 16px; top: 10px; }
+  .faq .a { padding: 0 16px 16px 42px; font-size: 14px; }
+  .faq .a::before { left: 16px; }
+
+  /* アクセス */
+  .access .info-box { padding: 20px 18px; }
+  .access .info-box dl { gap: 8px 14px; }
+
+  /* 下に固定の予約ボタン：少し小さくして本文を隠しにくく */
+  .float-cta { left: 12px; right: 12px; bottom: 12px; }
+  .float-cta .btn { padding: 12px 20px; font-size: 15px; }
+  footer { font-size: 12px; padding-bottom: 84px; }
+}
